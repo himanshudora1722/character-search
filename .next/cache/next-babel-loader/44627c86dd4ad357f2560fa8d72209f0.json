@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './searchBox';","map":{"version":3,"sources":["/Users/himdora/Documents/Assignment/Himanshu/src/components/molecules/SearchBox/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,aAAxB","sourcesContent":["export { default } from './searchBox';"]},"metadata":{},"sourceType":"module"}

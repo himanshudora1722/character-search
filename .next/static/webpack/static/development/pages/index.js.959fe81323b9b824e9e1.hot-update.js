@@ -1,0 +1,642 @@
+webpackHotUpdate("static/development/pages/index.js",{
+
+/***/ "./src/components/organism/CharacterListingPage/CharacterListingPage.view.js":
+/*!***********************************************************************************!*\
+  !*** ./src/components/organism/CharacterListingPage/CharacterListingPage.view.js ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/himdora/Documents/Assignment/Himanshu/src/components/organism/CharacterListingPage/CharacterListingPage.view.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+class CharacterListingPage extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    const {
+      character
+    } = this.props;
+    return __jsx("div", {
+      className: "character-block col-md-3 col-xs-6",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7,
+        columnNumber: 4
+      }
+    }, __jsx("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8,
+        columnNumber: 5
+      }
+    }, __jsx("img", {
+      className: "full-image",
+      src: character.image,
+      alt: "",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9,
+        columnNumber: 6
+      }
+    })), __jsx("div", {
+      className: "character-name",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11,
+        columnNumber: 5
+      }
+    }, character.name, __jsx("br", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13,
+        columnNumber: 6
+      }
+    }), __jsx("span", {
+      className: "label-size",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14,
+        columnNumber: 6
+      }
+    }, "id: "), __jsx("span", {
+      className: "label-size",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 6
+      }
+    }, "".concat(character.id, " - ")), __jsx("span", {
+      className: "label-size",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 6
+      }
+    }, "created ", this.getDateDiffInYears(character.created), " years ago")), __jsx("div", {
+      className: "character-detail",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      class: "row wrap",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-xs-6 adjust-padding-left",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 7
+      }
+    }, __jsx("span", {
+      className: "details darkgray",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 8
+      }
+    }, "Status")), __jsx("div", {
+      className: "col-xs-6 align-right adjust-padding-right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 7
+      }
+    }, character.status)), __jsx("div", {
+      class: "row wrap",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-xs-6 adjust-padding-left",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 7
+      }
+    }, __jsx("span", {
+      className: "details darkgray",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
+        columnNumber: 8
+      }
+    }, "Species")), __jsx("div", {
+      className: "col-xs-6 align-right adjust-padding-right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35,
+        columnNumber: 7
+      }
+    }, character.species)), __jsx("div", {
+      class: "row wrap",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-xs-6 adjust-padding-left",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 7
+      }
+    }, __jsx("span", {
+      className: "details darkgray",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 8
+      }
+    }, "Gender")), __jsx("div", {
+      className: "col-xs-6 align-right adjust-padding-right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 7
+      }
+    }, character.gender)), __jsx("div", {
+      class: "row wrap",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-xs-6 adjust-padding-left",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 7
+      }
+    }, __jsx("span", {
+      className: "details darkgray",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 8
+      }
+    }, "Origin")), __jsx("div", {
+      className: "col-xs-6 align-right adjust-padding-right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 7
+      }
+    }, character.origin.name)), __jsx("div", {
+      class: "row wrap",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "col-xs-6 adjust-padding-left",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50,
+        columnNumber: 7
+      }
+    }, __jsx("span", {
+      className: "details darkgray",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 8
+      }
+    }, "Last Location")), __jsx("div", {
+      className: "col-xs-6 align-right adjust-padding-right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53,
+        columnNumber: 7
+      }
+    }, character.location.name))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (CharacterListingPage);
+
+/***/ }),
+
+/***/ "./src/components/organism/CharacterListingPage/index.js":
+/*!***************************************************************!*\
+  !*** ./src/components/organism/CharacterListingPage/index.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CharacterListingPage_view__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CharacterListingPage.view */ "./src/components/organism/CharacterListingPage/CharacterListingPage.view.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _CharacterListingPage_view__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/organism/SearchDetail/SearchDetail.view.js":
+/*!*******************************************************************!*\
+  !*** ./src/components/organism/SearchDetail/SearchDetail.view.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _molecules_Filters__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../molecules/Filters */ "./src/components/molecules/Filters/index.js");
+/* harmony import */ var _molecules_SearchBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../molecules/SearchBox */ "./src/components/molecules/SearchBox/index.js");
+/* harmony import */ var _atoms_Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../atoms/Input */ "./src/components/atoms/Input/index.js");
+/* harmony import */ var _atoms_Label__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../atoms/Label */ "./src/components/atoms/Label/index.js");
+/* harmony import */ var _atoms_Select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../atoms/Select */ "./src/components/atoms/Select/index.js");
+/* harmony import */ var _CharacterListingPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../CharacterListingPage */ "./src/components/organism/CharacterListingPage/index.js");
+
+var _jsxFileName = "/Users/himdora/Documents/Assignment/Himanshu/src/components/organism/SearchDetail/SearchDetail.view.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
+
+
+
+
+
+
+class SearchDetailView extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
+  constructor() {
+    super();
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getUniqueGenderValueofCharacter", characterArray => characterArray && [...new Set(characterArray.map(a => a.gender))]);
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getUniqueSpeciesValueofCharacter", characterArray => characterArray && [...new Set(characterArray.map(a => a.species))]);
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getUniqueOriginValueofCharacter", characterArray => characterArray && [...new Set(characterArray.map(a => a.origin.name))]);
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getDateDiffInYears", date => {
+      const createdDate = new Date(date);
+      const currentDate = new Date();
+      return Math.abs(new Date(currentDate - createdDate).getUTCFullYear() - 1970);
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleChange", e => {
+      this.setState({
+        sortValue: e.target.value
+      });
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "compare", (postA, postB) => {
+      const bandA = postA.id;
+      const bandB = postB.id;
+      let comparison = 0;
+
+      if (bandA > bandB) {
+        comparison = 1;
+      } else if (bandA < bandB) {
+        comparison = -1;
+      }
+
+      return comparison;
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleSearchChange", e => {
+      this.setState({
+        searchValue: e.target.value
+      });
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleClick", () => {
+      const {
+        searchValue,
+        post,
+        searchedArray
+      } = this.state;
+      const {
+        characters
+      } = this.props;
+      let charactersToBeSearched = characters;
+
+      if (post.length > 0 && searchValue) {
+        charactersToBeSearched = post;
+      } else if (!searchValue && searchedArray.length > 0) {
+        charactersToBeSearched = searchedArray;
+      }
+
+      const searchedPost = [];
+      charactersToBeSearched.find(post => {
+        if (post.name.toLowerCase().includes(searchValue.toLowerCase())) searchedPost.push(post);
+      });
+      this.setState({
+        post: searchedPost
+      });
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getFilterValue", (key, filterObject) => {
+      return filterObject && filterObject.map(value => {
+        return __jsx("div", {
+          className: "truncate",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 82,
+            columnNumber: 5
+          }
+        }, __jsx(_atoms_Input__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          type: "checkbox",
+          id: "".concat(key, "-").concat(value),
+          handleChange: this.handleFilterChange,
+          name: value,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 83,
+            columnNumber: 6
+          }
+        }), __jsx(_atoms_Label__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          forLabel: value,
+          className: "search-checkbox",
+          text: value,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89,
+            columnNumber: 6
+          }
+        }), __jsx("br", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 93,
+            columnNumber: 8
+          }
+        }));
+      });
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleFilterChange", e => {
+      const {
+        characters
+      } = this.props;
+      const {
+        post
+      } = this.state;
+      const key = e.target.id.split('-')[0];
+      let uniqueArray;
+      let toDeleteArray;
+      let newArray;
+
+      if (key.toLowerCase() === 'gender') {
+        if (e.target.checked) {
+          uniqueArray = new Set(post.concat(characters.filter(item => item.gender === e.target.name)));
+          this.setState({
+            post: [...uniqueArray],
+            searchedArray: [...uniqueArray]
+          });
+        } else {
+          toDeleteArray = characters.filter(item => item.gender === e.target.name);
+          newArray = this.getRemovedResult(toDeleteArray);
+          this.setState({
+            post: [...newArray],
+            searchedArray: [...newArray]
+          });
+        }
+      } else if (key.toLowerCase() === 'species') {
+        if (e.target.checked) {
+          uniqueArray = new Set(post.concat(characters.filter(item => item.species === e.target.name)));
+          this.setState({
+            post: [...uniqueArray],
+            searchedArray: [...uniqueArray]
+          });
+        } else {
+          toDeleteArray = characters.filter(item => item.species === e.target.name);
+          newArray = this.getRemovedResult(toDeleteArray);
+          this.setState({
+            post: [...newArray],
+            searchedArray: [...newArray]
+          });
+        }
+      } else {
+        if (e.target.checked) {
+          uniqueArray = new Set(post.concat(characters.filter(item => item.origin.name === e.target.name)));
+          this.setState({
+            post: [...uniqueArray],
+            searchedArray: [...uniqueArray]
+          });
+        } else {
+          toDeleteArray = characters.filter(item => item.origin.name === e.target.name);
+          newArray = this.getRemovedResult(toDeleteArray);
+          this.setState({
+            post: [...newArray],
+            searchedArray: [...newArray]
+          });
+        }
+      }
+    });
+
+    Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "getRemovedResult", toDeleteArray => {
+      const {
+        post
+      } = this.state;
+      const toDelete = new Set(toDeleteArray.map(item => item.id));
+      return post.filter(obj => !toDelete.has(obj.id));
+    });
+
+    this.state = {
+      sortValue: 'Ascending',
+      searchValue: '',
+      post: [],
+      searchedArray: []
+    };
+  }
+
+  render() {
+    const {
+      characters,
+      className
+    } = this.props;
+    const {
+      sortValue,
+      post
+    } = this.state;
+    const sortValues = ['Ascending', 'Decending'];
+    let posts = post.length > 0 ? post : characters;
+    const filterObject = {
+      gender: this.getUniqueGenderValueofCharacter(posts),
+      species: this.getUniqueSpeciesValueofCharacter(posts),
+      origin: this.getUniqueOriginValueofCharacter(posts)
+    };
+    posts = posts && sortValue === 'Ascending' ? posts.sort(this.compare) : posts && posts.reverse();
+    return posts && posts.length > 0 ? __jsx("div", {
+      className: "".concat(className, " o-searchDetail"),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 180,
+        columnNumber: 4
+      }
+    }, __jsx("div", {
+      className: "row",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 181,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      className: "col-md-3 col-xs-12 fc-black",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 182,
+        columnNumber: 6
+      }
+    }, __jsx("h1", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 183,
+        columnNumber: 7
+      }
+    }, "Filters"), Object.keys(filterObject).map(key => {
+      return __jsx(_molecules_Filters__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        filterObject: filterObject,
+        keys: key,
+        getFilterValue: this.getFilterValue,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 186,
+          columnNumber: 9
+        }
+      });
+    })), __jsx("div", {
+      className: "col-md-9 col-xs-12",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 194,
+        columnNumber: 6
+      }
+    }, __jsx("div", {
+      className: "row search-sort-section",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 195,
+        columnNumber: 7
+      }
+    }, __jsx("h1", {
+      className: "col-xs-12 pl-0",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 196,
+        columnNumber: 8
+      }
+    }, "Selected Filters"), __jsx("div", {
+      className: "col-xs-6 mt30 pl-0",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 197,
+        columnNumber: 8
+      }
+    }, __jsx(_molecules_SearchBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      handleSearchChange: this.handleSearchChange,
+      handleClick: this.handleClick,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 198,
+        columnNumber: 9
+      }
+    })), __jsx("div", {
+      className: "col-xs-6 mt30 relative",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 203,
+        columnNumber: 8
+      }
+    }, __jsx(_atoms_Select__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      id: "sort",
+      name: "sort",
+      className: "sort",
+      onChange: this.handleChange,
+      value: sortValues,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 204,
+        columnNumber: 9
+      }
+    }))), __jsx("div", {
+      className: "row items",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 213,
+        columnNumber: 7
+      }
+    }, posts.map(character => __jsx(_CharacterListingPage__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      character: character,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 215,
+        columnNumber: 9
+      }
+    })))))) : null;
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SearchDetailView);
+
+/***/ })
+
+})
+//# sourceMappingURL=index.js.959fe81323b9b824e9e1.hot-update.js.map

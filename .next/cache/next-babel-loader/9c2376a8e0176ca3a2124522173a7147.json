@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './SearchDetail.view';","map":{"version":3,"sources":["/Users/himdora/Documents/Assignment/Himanshu/src/components/organism/SearchDetail/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,qBAAxB","sourcesContent":["export { default } from './SearchDetail.view'"]},"metadata":{},"sourceType":"module"}
