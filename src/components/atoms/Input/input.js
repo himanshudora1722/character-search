@@ -8,6 +8,7 @@ const Input = ({
 	handleChange,
 	onKeyPress,
 	name,
+	isChecked
 }) => {
 	return (
 		<input 
@@ -17,6 +18,7 @@ const Input = ({
 			onChange={handleChange}
 			name={name}
 			onKeyPress={onKeyPress}
+			checked={isChecked}
 		>
 			{text}
 		</input>

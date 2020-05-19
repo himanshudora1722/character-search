@@ -15,6 +15,7 @@ class SearchDetailView extends Component {
 			searchValue: '',
 			post: [],
 			searchedArray: [],
+			targetValue: [],
 		}
 	}
 
@@ -71,7 +72,9 @@ class SearchDetailView extends Component {
 	}
 
 	getFilterValue = (key, filterObject) => {
+		const { targetValue } = this.state;
 		return filterObject && filterObject.map((value) => {
+			const isChecked = targetValue.includes(value);
 			return (
 				<div className="truncate">
 					<Input
@@ -79,6 +82,7 @@ class SearchDetailView extends Component {
 						id={`${key}-${value}`}
 						handleChange={this.handleFilterChange}
 						name={value}
+						isChecked={isChecked}
 					/>
 					<Label 
 						forLabel={value} 
@@ -92,7 +96,7 @@ class SearchDetailView extends Component {
 
 	handleFilterChange = e => {
 		const { characters } = this.props;
-		const { post } = this.state;
+		let { post, targetValue } = this.state;
 		const key = e.target.id.split('-')[0];
 		let uniqueArray;
 		let toDeleteArray;
@@ -103,15 +107,19 @@ class SearchDetailView extends Component {
 				uniqueArray = new Set(post.concat(characters.filter(item => item.gender === e.target.name)))
 				this.setState({
 					post: [...uniqueArray],
-					searchedArray: [...uniqueArray]
+					searchedArray: [...uniqueArray],
+					targetValue: targetValue.concat(e.target.name),
 				})
 			} else {
 				toDeleteArray = characters.filter(item => item.gender === e.target.name);
 				newArray = this.getRemovedResult(toDeleteArray);
+				const index = targetValue.indexOf(e.target.name);
+				targetValue.splice(index, 1);
 
 				this.setState({
 					post: [...newArray],
-					searchedArray: [...newArray]
+					searchedArray: [...newArray],
+					targetValue: targetValue
 				})
 			}
 		} else if (key.toLowerCase() === 'species') {
@@ -119,15 +127,19 @@ class SearchDetailView extends Component {
 				uniqueArray = new Set(post.concat(characters.filter(item => item.species === e.target.name)))
 				this.setState({
 					post: [...uniqueArray],
-					searchedArray: [...uniqueArray]
+					searchedArray: [...uniqueArray],
+					targetValue: targetValue.concat(e.target.name),
 				})
 			} else {
 				toDeleteArray = characters.filter(item => item.species === e.target.name);
-				newArray = this.getRemovedResult(toDeleteArray)
+				newArray = this.getRemovedResult(toDeleteArray);
+				const index = targetValue.indexOf(e.target.name);
+				targetValue.splice(index, 1);
 
 				this.setState({
 					post: [...newArray],
-					searchedArray: [...newArray]
+					searchedArray: [...newArray],
+					targetValue: targetValue
 				})
 			}
 		} else {
@@ -135,15 +147,19 @@ class SearchDetailView extends Component {
 				uniqueArray = new Set(post.concat(characters.filter(item => item.origin.name === e.target.name)))
 				this.setState({
 					post: [...uniqueArray],
-					searchedArray: [...uniqueArray]
+					searchedArray: [...uniqueArray],
+					targetValue: targetValue.concat(e.target.name),
 				})
 			} else {
 				toDeleteArray = characters.filter(item => item.origin.name === e.target.name);
 				newArray = this.getRemovedResult(toDeleteArray);
+				const index = targetValue.indexOf(e.target.name);
+				targetValue.splice(index, 1);
 
 				this.setState({
 					post: [...newArray],
-					searchedArray: [...newArray]
+					searchedArray: [...newArray],
+					targetValue: targetValue
 				})
 			}
 		}
